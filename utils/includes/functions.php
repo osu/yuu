@@ -90,7 +90,7 @@ function remakeFile($files)
         $f->mime = $file['type'];
         $f->size = $file['size'];
         $f->tempfile = $file['tmp_name'];
-        $f->error = $file['error'];
+        $f->errorCode($file['error']);
         $result[] = $f;
     }
     return $result;
