@@ -4,7 +4,6 @@ class website
 {
     const name = "Yuu.sh";
     const subtitle = "Free and temporary file hosting<br>We keep your files online 1 day";
-    const version = "2.0.0";
     const home = "home";
     const get_param = "page";
     const debug = true;

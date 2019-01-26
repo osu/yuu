@@ -20,8 +20,11 @@ class Router
                 $this->get = array_combine( $m[1], $m[2]);
             }
         }else{
-            $this->array = explode("/", $_GET[$get_param]);
-            array_shift($this->array);
+            $array = explode("/", $_GET[$get_param]);
+            if($array[0] == ""){
+                array_shift($array);
+            }
+            $this->array = $array;
             $this->request = $this->array[0];
             $this->args = array_values(array_diff_key($this->array, [0 => $this->request]));
             $this->get = str_replace($_GET[$get_param], "", $_SERVER["REQUEST_URI"]);
