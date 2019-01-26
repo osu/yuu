@@ -33,9 +33,9 @@ class website
     const database = [
         "hostname" => "localhost",
         "port" => 3306,
-        "user" => "yuush",
-        "passwd" => "yuush",
-        "database" => "yuush",
+        "user" => "",
+        "passwd" => "",
+        "database" => "",
         "charset" => "utf8mb4"
     ];
 }
