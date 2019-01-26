@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "inc/head.twig" %}
+</head>
+
+<body>
+
+        <div id="particles-js"></div>
+
+    <form class="hero is-fullheight is-dark has-text-centered" method="POST">
+        <div class="hero-body">
+            <div class="container">
+                {% include "inc/header.twig" %}
+                {% autoescape false %}
+                <h2 class="subtitle">
+                    {{ page }}
+                </h2>
+                {% endautoescape %}
+                {% if code != 500 %}
+                    {% include "inc/navbar.twig" %}
+                {% endif %}
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

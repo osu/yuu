@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "inc/head.twig" %}
+</head>
+
+<body>
+
+        <div id="particles-js"></div>
+
+    <section class="hero is-fullheight is-dark has-text-centered">
+        <div class="hero-body">
+            <div class="container">
+                {% include "inc/header.twig" %}
+                <br>
+                <h1 class="title">What is Yuu.sh ?</h1>
+                <article class="message">
+                    <div class="message-body">
+                        Yuu.sh is an temporary file uploader based on <a href="https://github.com/pomf/pomf" target="blank">pomf.se</a>
+                    </div>
+                </article>
+                <h1 class="title">This service is free ?</h1>
+                <article class="message">
+                    <div class="message-body">
+                        Yes, but if you want to help us, you can make a donnation here :<br>
+                        - Patreon : <a href="https://patreon.com/nionionio">patreon.com/nionionio</a>
+                    </div>
+                </article>
+                <h1 class="title">Will you keep my files forever ?</h1>
+                <article class="message">
+                    <div class="message-body">
+                        No, we delete files every 24 hours to respect your privacy rights.
+                    </div>
+                </article>
+                <h1 class="title">How can I keep track of my uploads ?</h1>
+                <article class="message">
+                    <div class="message-body">
+                        You can't, since we are aiming to provide a private and secure service we don't host any type
+                        of in-site accounts.
+                    </div>
+                </article>
+                <h1 class="title">Why should I use this ?</h1>
+                <article class="message">
+                    <div class="message-body">
+                        We are aiming to provide a secure and fast service and also a big upload limit rate and we also
+                        delete all files after 24 hours (If the file is older than 24 hours it will be deleted).
+                    </div>
+                </article>
+                <h1 class="title">I saw something too illegal for my tastes here, what should I do ?</h1>
+                <article class="message">
+                    <div class="message-body">
+                        You can join our discord : <a href="https://discord.gg/kUK9E7f">discord.gg/kUK9E7f</a> or email
+                        us at xo[at]cock[dot]lu or oniisan[at]waifu[dot]club for any abuse or help.
+                    </div>
+                </article>
+                <h1 class="title">What sort of information do you log on me ?</h1>
+                <article class="message">
+                    <div class="message-body">
+                        We don't log anything from you, we only keep your files that you uploaded and automatically
+                        delete them after 24 hours.
+                    </div>
+                </article>
+                <h1 class="title">What are the allowed extensions here ?</h1>
+                <article class="message">
+                    <div class="message-body">
+                        We support any file extensions except the following: .nt, .ps1, .psm1, .bash_profile, .bashrc,
+                        .profile
+                    </div>
+                </article>
+                <h1 class="title">How are the file URLs going to be determined ?</h1>
+                <article class="message">
+                    <div class="message-body">
+                        Random 6-letter strings will automatically be generated for your uploads.<br>
+                        If you think that is too short, please contact us on our discord or by email at
+                        xo[at]cock[dot]lu or oniisan[at]waifu[dot]club.
+                    </div>
+                </article>
+                {% include "inc/navbar.twig" %}
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

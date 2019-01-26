@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "inc/head.twig" %}
+</head>
+
+<body>
+
+        <div id="particles-js"></div>
+
+    <section class="hero is-fullheight is-dark has-text-centered">
+        <div class="hero-body">
+            <div class="container">
+                {% include "inc/header.twig" %}
+                <br>
+                <h1 class="title">Upload with ShareX</h1>
+                <article class="message">
+                    <div class="message-body">
+                        Download ShareX here : <a href="https://getsharex.com/">getsharex.com</a><br>
+                        Configuration file : <a href="https://s.yuu.sh/yuu.sh.sxcu">s.yuu.sh/yuu.sh.sxcu</a>
+                    </div>
+                </article>
+                <h1 class="title">Upload with yuu-uploader-script</h1>
+                <article class="message">
+                    <div class="message-body">
+                        Download / Installation : <a href="https://github.com/OnDebian/yuu-uploader-script">github.com/OnDebian/yuu-uploader-script</a><br>
+                        Original Work : <a href="https://github.com/Qwerty-Space/pomf-uploader-script">github.com/Qwerty-Space/pomf-uploader-script</a>
+                    </div>
+                </article>
+                <h1 class="title">Upload with cUrl</h1>
+                <article class="message">
+                    <div class="message-body">
+                        <code>curl -F "upload[]@/path/to/file" https://yuu.sh/utils/api/upload.php</code><br>
+                        Reapeat <code>-F "upload[]@/path/to/file"</code> for multiple files
+                    </div>
+                </article>
+                {% include "inc/navbar.twig" %}
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
