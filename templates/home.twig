@@ -1,0 +1,24 @@
+{% extends "layout.twig" %}
+
+{% block page %}
+{% autoescape false %}
+<div class="select is-primary">
+	<select name="dtime">
+		<option value="24">Delete time : 1 day</option>
+		<option value="744">Delete time : 1 month</option>
+		<option value="8928">Delete time : 1 year</option>
+	</select>
+</div>
+<h2 class="subtitle">
+	<button id="upload" class="button is-primary is-rounded">
+		Click or drop files here
+	</button>
+	<input type="file" id="input" name="upload[]" multiple hidden>
+</h2>
+<h2 class="subtitle">
+	You can upload up to {{ global.maxsize }}mb per file
+</h2>
+<ul class="box uploadedFiles" style="display: none">
+</ul>
+{% endautoescape %}
+{% endblock page %}

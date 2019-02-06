@@ -1,0 +1,8 @@
+{
+    "config": {
+        "vendor-dir": "utils/libs"
+    },
+    "require": {
+        "twig/twig": "^2.6"
+    }
+}

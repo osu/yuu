@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{{ global.name }} :: {{ page }}</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.33.1/dist/sweetalert2.all.min.js"></script>
+	<script src="/js/particles.min.js"></script>
+	<script src="/js/script.min.js"></script>
+	<meta property="og:title" content="{{ global.name }} :: {{ page }}">
+	<meta property="og:site_name" content="{{ global.name }}">
+	<meta property="og:url" content="https://yuu.sh">
+	<meta property="og:description" content="{{ global.subtitle }}">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://yuu.sh/img/waifu_logo/1.png">
+</head>
+<body>
+	<div id="particles-js"></div>
+	<video src="/video/background.mp4" class="background" autoplay muted></video>
+
+    <section class="hero is-fullheight is-dark has-text-centered">
+        <div class="hero-body">
+            <div class="container">
+                {% autoescape false %}
+				<img src="" alt="Logo of a waifu" id="logo">
+				<h1 class="title">
+					{{ global.name }}
+				</h1>
+				<h2 class="subtitle">
+					{{ global.subtitle }}
+				</h2>
+				{% endautoescape %}
+                {{ block('page') }}
+                {% autoescape false %}
+				<ul class="nav-speed">
+					{% for page in global.pages %}
+					<li><a href="{{ page.url }}">{{ page.name }}</a></li>
+					{% endfor %}
+				</ul>
+				{% endautoescape %}
+            </div>
+        </div>
+    </section>
+</body>
+</html>

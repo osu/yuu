@@ -1,0 +1,11 @@
+{
+  "Name": "Yuu.sh - 1 year before delete",
+  "DestinationType": "ImageUploader, TextUploader, FileUploader",
+  "RequestURL": "https://yuu.sh/api/upload",
+  "FileFormName": "upload[]",
+  "Arguments": {
+    "delete_time": "8928"
+  },
+  "URL": "$json:items[0].url$",
+  "ThumbnailURL": "$json:items[0].url$"
+}

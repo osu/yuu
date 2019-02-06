@@ -1,0 +1,22 @@
+{% extends "layout.twig" %}
+
+{% block page %}
+<br>
+<h1 class="title">Upload with ShareX</h1>
+<article class="message">
+	<div class="message-body">
+		Download ShareX here : <a href="https://getsharex.com/">getsharex.com</a><br>
+		Configuration file (24 hours) : <a href="https://s.yuu.sh/yuu.sh-24.sxcu">s.yuu.sh/yuu.sh-24.sxcu</a><br>
+		Configuration file (1 month) : <a href="https://s.yuu.sh/yuu.sh-744.sxcu">s.yuu.sh/yuu.sh-744.sxcu</a><br>
+		Configuration file (1 year) : <a href="https://s.yuu.sh/yuu.sh-8928.sxcu">s.yuu.sh/yuu.sh-8928.sxcu</a><br>
+	</div>
+</article>
+<h1 class="title">Upload with cUrl</h1>
+<article class="message">
+	<div class="message-body">
+		<code>curl -F "upload[]@/path/to/file" -F "delete_file=TimeBeforeDelete" https://yuu.sh/api/upload</code><br>
+		Reapeat <code>-F "upload[]@/path/to/file"</code> for multiple files<br>
+		<code>TimeBeforeDelete</code> = "24" for 24 hours / "744" for 1 month / "8928" for 1 year
+	</div>
+</article>
+{% endblock page %}
