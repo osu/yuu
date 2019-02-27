@@ -172,7 +172,7 @@ class YuuUpload
             }
 		}
 		
-		$checker = $this->clamavChecker();
+		/*$checker = $this->clamavChecker();
 
 		if(!$checker) {
 			throw new Exception("Unable to check your file", 500);
@@ -180,7 +180,7 @@ class YuuUpload
 
 		if($checker === "unsafe") {
 			throw new Exception("Your file is unsafe", 400);
-		}
+		}*/
     
         $sha1_file = sha1_file($this->file["tmp_name"]);
     

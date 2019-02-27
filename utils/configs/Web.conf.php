@@ -21,7 +21,11 @@ class Web
         [
             "url" => "/tools",
             "name" => "Tools"
-        ],
+		],
+		[
+			"url" => "https://github.com/osu/yuu",
+			"name" => "Github"
+		],
         [
             "url" => "/contact",
             "name" => "Contact"
@@ -42,7 +46,7 @@ class Web
 	const max_upload_size = "10000";
 	const filename_size = 6;
 	const max_filename_retry = 15;
-	const unautorized_ext = [];
+	const unautorized_ext = ["nt","ps1","psm1","bash_profile","bashrc","profile"];
     const chars = "azertyuiopqsdfghjklmwxcvbn1234567890";
     const default_uri = "https://s.yuu.sh/";
     const uploadFolder = __DIR__."/../../uploads/";

@@ -26,8 +26,8 @@ class YuuClear
 
 		foreach ($files as $file) {
 			if($file["delete_date"] < $time){
-				unlink($this->upload_folder.$file["filename"]);
-				$db->query("DELETE FROM files WHERE ID = ".$file["ID"]);
+				unlink($this->upload_folder.rawurlencode($file["filename"]));
+				$this->conn->query("DELETE FROM uploads WHERE ID = ".$file["ID"]);
 			}
 		}
 	}
